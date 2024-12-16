@@ -1,9 +1,11 @@
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Featured = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -44,9 +46,13 @@ const Featured = ({ job }) => {
             <h3 className="text-xl ">{salary}</h3>
           </div>
         </div>
-        <button className="flex  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-4 rounded-lg w-36 text-white font-extrabold items-center justify-center ">
-          View Details
-        </button>
+        <div>
+          <Link to={`/job/${id}`}>
+            <button className="flex  bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-4 rounded-lg w-36 text-white font-extrabold items-center justify-center ">
+              View Details
+            </button>
+          </Link>
+        </div>
       </div>
     </div>
   );
