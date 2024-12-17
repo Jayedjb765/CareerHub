@@ -1,7 +1,9 @@
-import React from "react";
-
 const Statics = () => {
-  return <div></div>;
+  return (
+    <div>
+      <h3 className="text-2xl">Hellow</h3>
+    </div>
+  );
 };
 
 export default Statics;

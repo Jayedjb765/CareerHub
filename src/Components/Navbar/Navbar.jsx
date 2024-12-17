@@ -7,14 +7,14 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink to="/statics">Statiics</NavLink>
+        <NavLink to="/statics">Statics</NavLink>
       </li>
       <li>
         <NavLink to="/applied">Applied Jobs</NavLink>
       </li>
-      <li>
+      {/* <li>
         <NavLink to="/blogs">Blogs</NavLink>
-      </li>
+      </li> */}
       <li>
         <NavLink to="/about">About</NavLink>
       </li>
@@ -48,13 +48,15 @@ const Navbar = () => {
               {navbar}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">CareerHub</a>
+          <a className="btn btn-ghost text-2xl font-extrabold">CareerHub</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{navbar}</ul>
         </div>
         <div className="navbar-end">
-          <a className="btn">Start Applying</a>
+          <button className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF]  rounded-lg  px-6 py-2  text-white font-extrabold items-center justify-center">
+            Start Applying
+          </button>
         </div>
       </div>
     </div>

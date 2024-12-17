@@ -11,7 +11,8 @@ import { saveJobApplication } from "../../Utility/Utility";
 const Jobdetails = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
-  const job = jobs.find((job) => job.id === parseInt(id));
+  const Intid = parseInt(id);
+  const job = jobs.find((job) => job.id === Intid);
   const {
     job_description,
     job_responsibility,
@@ -23,7 +24,7 @@ const Jobdetails = () => {
   } = job;
 
   const handelapplidjobs = () => {
-    saveJobApplication(id);
+    saveJobApplication(Intid);
     toast("You have applied successfully");
   };
   return (

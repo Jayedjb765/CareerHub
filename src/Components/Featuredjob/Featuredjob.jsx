@@ -23,7 +23,7 @@ const Featuredjob = () => {
       </div>
       <div className={datalength === jobs.length && "hidden"}>
         <button
-          className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-4 rounded-lg w-36 text-white font-extrabold"
+          className="bg-gradient-to-r from-[#7E90FE] to-[#9873FF] py-2 px-4 rounded-lg w-36 text-white font-extrabold mb-10"
           onClick={() => setdatalength(jobs.length)}
         >
           Show all Jobs
